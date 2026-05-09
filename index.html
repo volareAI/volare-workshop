@@ -1523,8 +1523,16 @@
             line-height: 1.55;
             margin-top: 6px;
         }
-        @media (max-width: 720px) {
-            .video-testimonials { grid-template-columns: 1fr; }
+        @media (max-width: 960px) {
+            .video-testimonials { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .video-testimonials > .video-testimonial,
+            .video-testimonials > .video-testimonial:nth-child(4),
+            .video-testimonials > .video-testimonial:nth-child(5) {
+                grid-column: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            .video-testimonials { grid-template-columns: 1fr; gap: 20px; }
         }
 
         /* ── GUARANTEE (Risk Reversal) ── */
