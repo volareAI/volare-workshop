@@ -1004,6 +1004,11 @@
             .proof-bar__label { font-size: 0.75rem; }
 
             .vid-testimonials { grid-template-columns: 1fr; gap: 32px; }
+            .vid-testimonials > .vid-test,
+            .vid-testimonials > .vid-test:nth-child(4),
+            .vid-testimonials > .vid-test:nth-child(5) {
+                grid-column: auto;
+            }
             .vid-test__tagline { font-size: 13px; }
 
             .reveals-grid { grid-template-columns: 1fr; }
